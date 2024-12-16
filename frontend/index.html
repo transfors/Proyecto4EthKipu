@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interfaz SimpleDEX</title>
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.6.2/dist/ethers.umd.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Título -->
+    <h1>SimpleDEX - Interfaz</h1>
+
+    <!-- Conectar Wallet -->
+    <div class="section">
+      <button id="connectWallet">Conectar Wallet</button>
+      <p id="walletAddress">Dirección: No conectada</p>
+      <p id="walletBalance">Balance: 0 ETH</p>
+    </div>
+
+    <!-- Agregar liquidez -->
+    <div class="section">
+      <h2>1. Agregar Liquidez</h2>
+      <div class="button-group">
+        <button id="addLiquidity">Agregar Liquidez</button>
+      </div>
+    </div>
+
+    <!-- Retirar liquidez -->
+    <div class="section">
+      <h2>2. Retirar Liquidez</h2>
+      <div class="button-group">
+        <button id="removeLiquidity">Retirar Liquidez</button>
+      </div>
+    </div>
+
+    <!-- Intercambiar Tokens -->
+    <div class="section">
+      <h2>3. Intercambiar Tokens</h2>
+      <div class="button-group">
+        <button id="swapAforB">Intercambiar TokenA por TokenB</button>
+        <button id="swapBforA">Intercambiar TokenB por TokenA</button>
+      </div>
+    </div>
+
+    <!-- Obtener Precios -->
+    <div class="section">
+      <h2>4. Obtener Precios</h2>
+      <div class="button-group">
+        <button id="getPrices">Obtener Precios</button>
+      </div>
+      <p id="priceTokenA">Precio de TokenA: --</p>
+      <p id="priceTokenB">Precio de TokenB: --</p>
+    </div>
+  </div>
+
+  <footer>
+    Desarrollado por tu equipo | © 2024
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
